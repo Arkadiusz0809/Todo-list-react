@@ -1,17 +1,20 @@
 # Task List
 ![App](https://github.com/Arkadiusz0809/Todo-list-react/blob/main/public/Animation.gif?raw=true)
 
+[Demo](https://arkadiusz0809.github.io/Todo-list-react/)
 
 Description
+--
 
 This is an application that will help the user to become an organized person. The user can enter any phrase that appears below and then be able to deselect the task after it is completed. 
---
+
 Then after adding the task, the user can press the "ukończ wszystkie" button and then all tasks will be crossed out.
---
+
 When the task is crossed out, that is completed, use the "ukryj ukończone" button to hide tasks already done. 
---
+
 
 Tools used:
+--
 - HTML
 - JS [ ECMAScript 6]
 - CSS
@@ -22,6 +25,7 @@ Tools used:
 - Media queries
 - Markdown language
 - React JS
+- npm
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
