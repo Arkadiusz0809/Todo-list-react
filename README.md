@@ -1,5 +1,5 @@
 # Task List
-![App](Animation.gif)
+![App](https://github.com/Arkadiusz0809/Todo-list-react/blob/main/public/Animation.gif?raw=true)
 
 
 Description
@@ -21,6 +21,7 @@ Tools used:
 - Normalize.css
 - Media queries
 - Markdown language
+- React JS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
