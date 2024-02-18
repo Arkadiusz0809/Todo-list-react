@@ -9,16 +9,20 @@ import { useState } from "react";
 
 hello();
 
-const tasks = [
-  { id: 1, content: "mleko", done: false },
-  { id: 2, content: "banan", done: true },
-];
-
 function App() {
 const [hideDone, setHideDone] = useState(false);
+const [tasks, setTasks] = useState([
+  { id: 1, content: "mleko", done: false },
+  { id: 2, content: "banan", done: true },
+]);
+
 
 const toggleHideDone = () => {
   setHideDone(hideDone => !hideDone);
+};
+
+const removeTasks = (id) => {
+  setTasks(tasks => tasks.filter(task => task.id !== id));
 };
 
   return (
@@ -30,7 +34,11 @@ const toggleHideDone = () => {
       />
       <Section
         title="Lista zadań"
-        body={<Tasks tasks={tasks} hideDone={hideDone} />}
+        body={<Tasks 
+          tasks={tasks} 
+          hideDone={hideDone}
+          removeTasks={removeTasks}
+          />}
         extraHeaderContent={<Buttons tasks={tasks} 
         hideDone={hideDone} 
         toggleHideDone={toggleHideDone} />}
