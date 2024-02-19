@@ -18,6 +18,10 @@
     transition: color 0.3s;
 }
 
+.buttons_button:disabled {
+    color: #ccc;
+}
+
 @media(max-width:767px){
     .buttons_button{
         flex-basis: 100%;
