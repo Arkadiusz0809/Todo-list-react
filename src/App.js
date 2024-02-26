@@ -4,19 +4,26 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import { hello } from "./utils/hello";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { goodBay } from "./utils/hello";
 
-hello();
+goodBay();
 
-const defaultTasks = [
-  { id: 1, content: "mleko", done: false },
-  { id: 2, content: "banan", done: true },
-];
+const getInitialTasks = () => {
+  const getDataFromLocal = localStorage.getItem("tasks");
+
+  return getDataFromLocal 
+  ? JSON.parse(getDataFromLocal) 
+  : []
+};
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(defaultTasks);
+  const [tasks, setTasks] = useState(getInitialTasks);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -57,7 +64,7 @@ function App() {
       <Section
         title="Dodaj nowe zadanie"
         body={
-          <Form addNewTask={addNewTask}/>}
+          <Form addNewTask={addNewTask} />}
       />
       <Section
         title="Lista zadań"
@@ -66,6 +73,7 @@ function App() {
           hideDone={hideDone}
           removeTasks={removeTasks}
           toggleTaskDone={toggleTaskDone}
+          
         />}
         extraHeaderContent={
           <Buttons

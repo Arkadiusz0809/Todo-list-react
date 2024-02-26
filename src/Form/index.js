@@ -10,11 +10,12 @@ const Form = ({ addNewTask }) => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        if(!checkEmptyTask(newTaskContent)) {
+        if (!checkEmptyTask(newTaskContent)) {
             addNewTask(newTaskContent);
             setNewTaskContent("");
         }
     };
+
 
     return (
         <form className="form" onSubmit={onFormSubmit}>
