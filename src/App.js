@@ -5,17 +5,9 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
-import { goodBay } from "./utils/hello";
 
-goodBay();
-
-const getInitialTasks = () => {
-  const getDataFromLocal = localStorage.getItem("tasks");
-
-  return getDataFromLocal 
-  ? JSON.parse(getDataFromLocal) 
-  : []
-};
+const getInitialTasks = () => 
+JSON.parse(localStorage.getItem("tasks")) || [];
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
