@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.div`
+export const StyledSection = styled.main`
     margin: 10px 0;
     background: white;
     box-shadow: 0 0 5px #ddd;
@@ -29,4 +29,5 @@ export const Title = styled.h2`
 
 export const Body = styled.body`
     padding: 20px;
+    background: white;
 `;
