@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { StyledForm, Input, Button } from "./styled.js"
 
-
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
@@ -22,7 +21,6 @@ const Form = ({ addNewTask }) => {
             focusInput();
         }
     };
-
 
     return (
         <StyledForm onSubmit={onFormSubmit}>
