@@ -1,7 +1,7 @@
 import {StyledContainer} from "./styled.js";
 
 const Container = ({ children }) => (
-    <StyledContainer >
+    <StyledContainer>
         {children}
     </StyledContainer>
 );
