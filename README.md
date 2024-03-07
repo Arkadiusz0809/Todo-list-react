@@ -30,6 +30,8 @@ Tools used:
 - npm
 - localeStorage
 - styled components
+- react-redux
+- react-toolkit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
