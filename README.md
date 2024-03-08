@@ -1,5 +1,5 @@
 # Task List
-![App](https://github.com/Arkadiusz0809/Todo-list-react/blob/main/public/Animation.gif?raw=true)
+![App](https://github.com/Arkadiusz0809/Todo-list-react/blob/main/src/images/Animation.gif?raw=true)
 
 [Demo](https://arkadiusz0809.github.io/Todo-list-react/)
 
