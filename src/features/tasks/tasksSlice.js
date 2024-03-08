@@ -22,9 +22,9 @@ const tasksSlice = createSlice({
                 task.done = true;
             });
         },
-        removeTasks: (state, action) => {
-            const index = state.tasks.findIndex(task => task.id !== action.payload.id);
-            state.tasks.splice(index, 1);
+        removeTasks: ({ tasks }, { payload: taskId }) => {
+            const index = tasks.findIndex(({ id }) => id === taskId);
+            tasks.splice(index, 1);
         }
     },
 });
