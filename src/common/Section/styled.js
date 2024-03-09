@@ -30,4 +30,8 @@ export const Title = styled.h2`
 export const Body = styled.body`
     padding: 20px;
     background: white;
-`;
+
+    @media(max-width: 767px){
+        padding: 5px
+    }
+`; 
