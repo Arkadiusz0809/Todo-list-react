@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -26,6 +27,11 @@ export const Content = styled.span`
     `}
 `;
 
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: teal;
+`;
+
 export const Button = styled.button`
     border: none;
     width: 30px;
@@ -43,8 +49,7 @@ export const Button = styled.button`
             background-color: hsl(120, 100%, 40%);
         }
     `}
-
-    ${({remove}) => remove && css`
+    ${({ remove }) => remove && css`
         background-color: hsl(0, 100%, 45%);
 
         &:hover {
