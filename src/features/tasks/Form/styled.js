@@ -14,6 +14,7 @@ export const StyledForm = styled.form`
 export const Input = styled.input`
     padding: 5px;
     border: 1px solid #ddd;
+    width: 100%;
 `;
 
 export const Button = styled.button`
