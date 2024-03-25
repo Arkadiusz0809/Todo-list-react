@@ -20,7 +20,6 @@ function* saveTasksInLocalStorageHandler() {
 }
 
 export function* tasksSaga() {
-    console.log("saga działa")
     yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeLatest("*", saveTasksInLocalStorageHandler)
 }
