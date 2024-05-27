@@ -30,10 +30,11 @@ export default () => (
                     </article>
                     <article>
                         <p>
-                            Bardo <b>chciałbym</b> ukończyć ten kurs. Gdy to przeczytam za jakiś czas to
+                            Bardzo <b>chciałbym</b> ukończyć ten kurs. Gdy to przeczytam za jakiś czas to
                             mam nadzieję, że przyjdę tu z myślą o swoim <i>
                                 Homepage on recrutation
                             </i>.
+                            <b>[edit:] ukończyłem kurs i aktywnie rekrutuje 😄 </b>
                         </p>
                     </article>
                     <article>
